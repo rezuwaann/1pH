@@ -1,0 +1,51 @@
+.header {
+    height: 300px;
+    color: black;
+    /* background-color: bisque; */
+    /* background-image: url('something.png'); */
+    background-image: url('../images/img/Screenshot\ 2024-04-29\ 191500.png');
+    /* background-repeat: no-repeat; */
+
+/* background-position: right; */
+    /* background-repeat: repeat-x; repeats on x axis */
+    /* background-repeat: repeat-y; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    background-size: 300px;
+}
+
+.dolor{
+    border: 2px solid peru;
+    height: 60px;
+    display: inline-block;
+    
+}
+h1 {
+    font-size: 30px;
+    text-decoration: overline;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blog {
+    margin: 20px;
+    border: 10px solid tomato;
+    box-shadow: 10px 10px 20px blueviolet;
+
+}
+
+.Second {
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.incident {
+    border: 2px solid purple;
+    margin: 20px;
+    display: inline-block;
+    /* height: 200px; */
+    /* display: block; */
+}
+
+li {
+    display: inline;
+}
