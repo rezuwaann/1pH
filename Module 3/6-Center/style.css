@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    height: 800px;
+}
+.box{
+    background-color: burlywood;
+    font-size: 4em;
+    height: 300px;
+    width: 300px;
+}
