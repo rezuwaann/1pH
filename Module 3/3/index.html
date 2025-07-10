@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitha Ghor</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -13,14 +14,17 @@
         <section>
             <h2>Jamal Mother Pitha Ghar</h2>
             <form>
-                <label for="name">Your Name</label>
-                <input type="text" name="" id="name">
-             
-                <label for="email">Enter your email</label>
-                <input type="email" name="" id="email">
-           
+                <fieldset class="basicinfo">
+                    <legend>Basic Info</legend>
+                    <label for="name">Your Name</label>
+                    <input type="text" name="" id="name">
+
+                    <label for="email">Enter your email</label>
+                    <input type="email" name="" id="email">
+                </fieldset>
+
                 <fieldset>
-                    <legend >Pitha Info</legend>
+                    <legend>Pitha Info</legend>
 
                     <input type="radio" name="pitha" id="chitoy">
                     <label for="chitoy">Chitoy</label>
@@ -31,6 +35,28 @@
                     <input type="radio" name="pitha" id="puri">
                     <label for="puri">Dal Puri</label>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Vorta Selection</legend>
+
+                    <input type="checkbox" name="vorta" id="sorisa">
+                    <label for="sorisa">Sorisa</label>
+
+                    <input type="checkbox" name="vorta" id="shutki">
+                    <label for="shutki">Shutki</label>
+
+                    <input type="checkbox" name="vorta" id="morich">
+                    <label for="morich">Morich</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extra Info</legend>
+                    <textarea name="" id="" cols="50" rows="4"></textarea>
+                </fieldset>
+
+                <input type="submit" value="submit">
+                <input type="reset" value="Reset">
             </form>
         </section>
     </header>
