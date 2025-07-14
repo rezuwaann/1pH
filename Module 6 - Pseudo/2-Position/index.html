@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Positions</title>
+</head>
+
+<style>
+    .box {
+        border: 2px solid peru;
+    }
+.dummy{
+    height: 200px;
+    width: 200px;
+    border: 2px solid peru;
+}
+.another-container{
+       height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+}
+   
+/* position:relative */
+
+    /* .two{
+        position: relative;
+        left: 50px;
+        top: -100px;
+    } */
+
+
+
+
+
+    /* position:absolute */
+
+    /*
+     .swim-container {
+        position: relative;
+    } .two{
+    position: absolute;
+    top: 40px;
+    left: 100px; 
+}
+*/
+
+
+/* position:sticky */
+/* .two{
+    position: sticky;
+    top: 0px;
+} */
+
+
+ /* position:fixed */
+ /* .two{
+    position:fixed;
+    top:10px;
+    left: 10px;
+ } */
+</style>
+
+<body>
+    <h3>CSS Positions</h3>
+    <ol>
+        <!-- Flow related -->
+        <li>Static</li>
+        <li>Relative : <small>Current position relative e kototuku change hobe.and will not leave the current
+                spot.</small></li>
+        <li>Absolute : <small>Will lose it's own position and will move based on the root.It works on its parent ,if parent has position:absolute; else it works on main page;</small>
+        </li>
+        <!-- scroll related -->
+        <li>Fixed : Doesnt care about parent container,fixed in the whole viewport.</li>
+        <li>Sticky : only sticky in its own parent if there is one</li>
+    </ol>
+
+    <div class="swim-container">
+        <div class="box one">
+            <img src="img/hardy.png" alt="">
+        </div>
+
+        <div class="box two">
+            <img src="img/wc-mini.png" alt="">
+        </div>
+
+        <div class="box three">
+            <img src="img/hardy.png" alt="">
+        </div>
+
+
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+    <div class="another-container"></div>
+</body>
+
+</html>
