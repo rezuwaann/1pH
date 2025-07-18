@@ -1,0 +1,28 @@
+nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkgrey;height: 100vh;
+
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+   width: 50%;
+   
+   border: 2px solid blueviolet;
+}
+.login-form input{
+    margin-top: 10px;
+}

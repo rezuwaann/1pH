@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 2px solid aqua;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .img-container div {
+            width: 50%;
+        }
+
+        .img-container img {
+            width: 100%;
+        }
+
+        .img-container {
+            display: flex;
+
+        }
+
+        @media screen and (max-width:576px) {
+            .img-container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS Relative Unit</li>
+            <li>Body max width and horizontal center align</li>
+            <li>Image fluid(in percentage)</li>
+            <li>Two column flex and use media query with flex direction column</li>
+            <li>Multi column :grid layout</li>
+            <li>Menu responsive: will need javascript</li>
+        </ol>
+
+        <!-- <div class="example"><img src="../6 Media Query for devices/wc-mini.png" alt=""></div> -->
+
+        <div class="img-container">
+            <div>
+                <img src="wc-mini.png" alt="">
+            </div>
+
+            <div>
+                <img src="wc-big.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
