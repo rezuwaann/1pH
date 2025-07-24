@@ -19,9 +19,31 @@ img {
 
 .row>div {
     flex: 1;
-}.vertical-collage img {
+}
+
+.vertical-collage img {
     height: calc((100% - 5px)/2);
     /* height: 50%; */
 
     /* gap: 5px; */
+}
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
 }
