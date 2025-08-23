@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bg-red {
+            background-color: red;
+            font-size: 30px;
+        }
+
+        .bg-cyan {
+            background-color: cyan;
+            font-size: 40px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="old-dhaka" class="food">
+        <h1 id="food-title">Foods I love</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eius <span>oli goli</span> voluptatem magnam
+            delectus quidem numquam <span>aspernatur</span> debitis quisquam labore quas.</p>
+        <h1>asdf asdf <span>Some text</span>asdfa asdf</h1>
+        <ul>
+            <li id="rice">Rice</li>
+            <li id="potato">Potato</li>
+            <li>Fish</li>
+            <li>Lentils</li>
+            <li class="foreign">Burger</li>
+            <li class="foreign">Pizza </li>
+            <li class="foreign">Pasta</li>
+        </ul>
+    </section>
+
+
+</body>
+
+<script>
+    const spanElements = document.querySelectorAll('.food span');
+    for (const span of spanElements) {
+        // console.log(span.innerText)
+        span.innerHTML = "<span style='color: red;'> " + span.innerText + ' </span >';
+    }
+
+    const rice = document.getElementById('rice')
+    rice.style.color = 'blue';
+    rice.style.fontSize = '50px'
+    rice.style.backgroundColor = 'lightgreen'
+    rice.style.borderRadius = '3px';
+    rice.style.paddingLeft = '30px';
+
+
+
+    const potato = document.getElementById('potato')
+    potato.classList.add('bg-red')
+    potato.classList.replace('bg-red', 'bg-cyan')
+    potato.classList.remove('bg-cyan')
+    potato.classList.add('bg-red')
+    potato.classList.add('bold')
+    // classList.toggle() is a JavaScript function that adds a class if it's not present, and removes it if it is
+
+    console.log(potato.classList)
+
+
+    console.log(potato.getAttribute('class'))
+    console.log(potato.getAttribute('id'))
+    
+    console.log(potato.setAttribute('title','Title or tooltip by Js'))
+
+
+</script>
+
+</html>

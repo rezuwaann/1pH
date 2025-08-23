@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="f">Document Object Model</h1>
+    <li id="second">Document</li>
+    <li class="third">Object</li>
+    <li class="third">Model</li>
+    <li class="third">DOM</li>
+</body>
+
+<script>
+
+    // tag name
+    const liCollection = document.getElementsByTagName('li');
+    for (const li of liCollection) {
+        console.log(li)
+        console.log(li.innerText)
+
+    }
+
+
+    // id name
+
+    const idGet = document.getElementById('second');
+    idGet.innerText = 'Doooooocument';
+
+    // class name
+    const classGet = document.getElementsByClassName('third');
+    for (const cls of classGet) {
+        cls.innerText = 'DOM DOM DOM';
+    }
+    
+</script>
+
+</html>
